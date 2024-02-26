@@ -16,4 +16,9 @@ class PageController extends Controller
         $movies = Movie::all();
         return view('welcome', compact('movies'));
     }
+    public function show($id)
+    {
+        $movie = Movie::where('id', $id)->first();
+        return view('single_movie', compact('movie'));
+    }
 }
