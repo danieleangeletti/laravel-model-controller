@@ -16,7 +16,7 @@
                                 <li class="list-group-item">Date: {{$movie->date}}</li>
                                 <li class="list-group-item">Vote: {{$movie->vote}}</li>
                             </ul>
-                            <a href="{{ route('movie', ['id' => $index + 1 ]) }}" class="btn btn-primary">GO TO THE FILM</a>
+                            <a href="{{ route('movie', ['id' => $movie->id ]) }}" class="btn btn-primary">GO TO THE FILM</a>
                         </div>
                     </div>
                 </div>
